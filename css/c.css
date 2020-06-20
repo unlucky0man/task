@@ -1,0 +1,290 @@
+/****************************************************************/
+/*首页index.html*/
+/*公共类inner*/
+#inner{
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding: 0;
+}
+
+
+/*页首区CSS*/
+#head{
+	height: 110px
+}
+table.head_t{
+	background-color: #1b2838;
+	border-bottom: 4px solid #66c0f4;
+	width: 100%;
+	height: 100%
+	margin: 0px;
+}
+td.head{
+	text-align: center;
+	color: #66c0f4;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+/*导航区css*/
+#navy{
+	background-color: rgb(61,72,156);
+	width:100%;
+	height:40px;
+	margin:0;
+	text-align:center;
+	list-style:none;
+}
+/*去超链接下划线*/
+#navy a:link,a:visited{
+	text-decoration:none;
+}
+#navy-item{
+	padding:0 25px;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	font-weight:normal;
+	color:#fff;
+}
+#navy-item:hover{
+	display:inline-block;
+	background: #171a21;
+}
+
+/*主体区CSS*/
+#body1{
+	background: #171a21;
+}
+/*主体区样式，包括背景图，大小等*/
+#body_inner1{
+	background-image: url(../img/bj.jpg);
+	background-color: white;
+	background-repeat: no-repeat;
+/*	background-size: cover;平铺背景图好像不好看了*/
+	float: center;
+	width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    border-left: 5px solid #c6d4df;
+    border-right: 5px solid #c6d4df;
+}
+/*约束主页中的主体区大小*/
+#body11{
+	width: 500px;
+    float: left;
+}
+#body12{
+	width: 500px;
+    float: left;
+}
+#body13{
+	width: 500px;
+    float: left;
+}
+/**/
+#img_tx{
+	border: 5px solid #c6d4df;
+	width: 250px;
+	height: 250px;
+}
+div.body_title{
+	float: top;
+	text-align: left;
+	color: #171a21;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 100px;
+}
+div.body_text{
+	margin-left: 100px;
+}
+div.body_d{
+	width: 500px;
+    height: 800px;
+    float: left;
+    border: 1px;
+}
+
+/*页脚区CSS*/
+table.foot_t{
+	background-color: #171a21;
+	border-top: 4px solid rgb(21,22,43);
+	width: 100%;
+	margin: 0px;
+}
+td.foot{
+	font-size: 24px;
+	font-weight: bolder;
+	color: #66c0f4;
+	text-align: center;
+	margin: 0px;
+}
+/****************************************************************/
+/*在玩的游戏person.html*/
+/*主体区CSS*/
+#body2{
+	background: #171a21;
+	width: 100%；
+}
+#body_inner2{
+	background-image: url(../img/bj.jpg);
+	background-color: white;
+	background-repeat: no-repeat;
+/*	background-size: cover;平铺背景图好像不好看了*/
+	float: center;
+	width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1000px;
+}
+#anime{
+	width: 100%
+	height: 1000px;
+}
+/*图片轮播相关CSS*/
+ul{
+	list-style: none;
+}
+/*使用absolute使图片位置绝对固定，再通过top,left属性调整位置*/
+.img_a{
+	position: absolute;
+	top:142px;
+	left:162px;
+}
+.img_a li span{
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	animation: image 18s linear infinite;
+	-webkit-animation: image 18s linear infinite;
+}
+ .img_a li span img{
+	width: 1500px;
+	height: 1000px;
+ }
+ /*使用选择器为每张图片设置延时显示时间*/
+ .img_a li:nth-child(1) span{
+ 	animation-delay: 0s;
+ 	-webkit-animation-delay: 0s;
+ }
+ .img_a li:nth-child(2) span{
+ 	animation-delay: 6s;
+ 	-webkit-animation-delay: 6s;
+}
+ .img_a li:nth-child(3) span{
+ 	animation-delay: 12s;
+ 	-webkit-animation-delay: 12s;
+ }
+ /*淡入淡出动画*/
+ @keyframes image{
+ 	0%{opacity: 0;}
+	10%{opacity: 0.5;}
+	20%{opacity: 1;}
+	80%{opacity: 0.5;}
+	100%{opacity: 0;}
+ }
+ @-webkit-keyframes image{
+ 	0%{opacity: 0;}
+	10%{opacity: 0.5;}
+	20%{opacity: 1;}
+	80%{opacity: 0.5;}
+	100%{opacity: 0;}
+ }
+/****************************************************************/
+/*我的游戏库table.html*/
+/*主体区CSS*/
+#body3{
+	background: #171a21;
+	width: 100%；
+}
+#body_inner3{
+	background-image: url(../img/bj.jpg);
+	background-color: rgb(27,40,56);
+	background-repeat: no-repeat;
+/*	background-size: cover;平铺背景图好像不好看了*/
+	float: center;
+	width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+}
+/*table的样式*/
+.game_table{
+	width: 1500px;
+	float: left;
+	font-size: 16px;
+	background-color: rgb(27,40,56);
+}
+/*图片部分表格*/
+.g_img{
+	width: 198px;
+	height: 199px;
+	border: solid black;
+	border-width: 1px 1px 1px 1px;
+}
+/*文字部分表格*/
+.g_int{
+	color: rgb(198,212,223);
+	padding-left: 10px;
+	text-align: top;
+	width: 298px;
+	height: 199px;
+	border: solid black;
+	border-width: 1px 1px 1px 1px;
+}
+/****************************************************************/
+/*和我开黑form.html*/
+/*主体区CSS*/
+#body4{
+	background: #171a21;
+	width: 100%；
+}
+#body_inner4{
+	background-image: url(../img/bj.jpg);
+	background-color: white;
+	background-repeat: no-repeat;
+/*	background-size: cover; 平铺背景图好像不好看了*/
+	float: center;
+	width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    border-left: 5px solid #c6d4df;
+    border-right: 5px solid #c6d4df;
+}
+/*表单样式*/
+div.form_title{
+	text-align: center;
+	color: #171a21;
+	font-size: 40px;
+	font-weight: bold;
+	margin-left: 100px;
+	padding-top: 50px; 
+}
+div.body_form{
+	float: center;
+	text-align: center;
+}
+.form_t{
+	margin: auto;
+}
+/*问题样式*/
+td.q{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 50px;
+	color: rgb(27,40,56);
+}
+/*按钮样式*/
+#butt{
+	background-color: rgb(27,40,56);
+	color: rgb(198,212,223);
+	font-weight: bolder;
+	font-size:40px;
+	width: 200px;
+	height: 80px;
+}
+/****************************************************************/

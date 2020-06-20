@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head>
+<script>
+	function a(){
+		var c=document.getElementById("lxfs").value;
+		var d=document.getElementById("sj").value;
+		var g=document.getElementById("yx").value;
+		alert('那我们约好了在'+d+'一起玩'+g+',到时我会联系'+c+',我们不见不散!');
+	}
+</script>
+	<title>和我开黑</title>
+	<link rel="stylesheet" href="css/c.css">	
+</head>
+<body>
+	<!--页眉区-->
+	<div id="head">
+		<!--公共类inner,用于放置内容-->
+		<div class="inner">
+			<table class="head_t">
+				<tr>
+					<td class="head">
+						<p>和我开黑</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--页眉区结束-->
+	<!--导航区-->
+	<div id="navy">
+		<li>
+			<a href="index.html"><span id="navy-item">首    页</span></a>
+
+			<a href="person.html"><span id="navy-item">游戏壁纸</span></a>
+
+			<a href="table.html"><span id="navy-item">我的游戏库</span></a>
+
+			<a href="form.html"><span id="navy-item">和我开黑</span></a>
+		</li>
+	</div>
+	<!--导航区结束-->
+	<!--主体区-->
+	<div id="body4">
+		<div id="body_inner4">
+			<div class="form_title">
+				<p>你也是游戏爱好者吗？</p>
+				<p>如果是的话，为什么不来一起开黑呢？</p>
+			</div>
+			<form>
+				<div class="body_form">
+					<table class="form_t">
+						<tbody>
+							<tr>
+								<td class="q">留下你的联系方式</td>
+								<td><textarea class="textarea" name="conn" id="lxfs"></textarea></td>
+								<td class="q">约我打个游戏吧！</td>
+							</tr>
+							<tr>
+								<td class="q">不如在</td>
+								<td>
+									<input type="date" name="date" id="sj">
+								</td>
+								<td class="q">一起打</td>
+								<td>
+									<select name="game" id="yx">
+										<option value="命运2">命运2</option>
+										<option value="CSGO">CSGO</option>
+										<option value="彩虹6号">彩虹6号</option>
+										<option value="使命召唤16">使命召唤16</option>
+										<option value="泰坦陨落2">泰坦陨落2</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div>
+						<input type="button" value ="约好了" onclick="a()" id="butt"> 
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--主体区结束-->
+	<!--页脚区-->
+	<div id="foot">
+		<div class="inner">
+			<table class="foot_t">
+				<tr>
+					<td class="foot">
+						<span>本页结束</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--页脚区结束-->
+</body>
